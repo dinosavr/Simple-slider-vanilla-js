@@ -1,0 +1,95 @@
+:root {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+}
+
+h1 {
+	text-align: center;
+	margin-top: 100px;
+}
+
+.conatainer {
+	position: relative;
+	max-width: 500px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.img-slider {
+	width: 100%;
+	display: none;
+}
+
+.button {
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	border: 0;
+	border-radius: 50%;
+	background-color: #389;
+	cursor: pointer;
+}
+
+.button::before {
+	content: "";
+	width: 20px;
+	height: 2px;
+	background-color: #fff;
+	position: absolute;
+}
+
+.button::after {
+	content: "";
+	width: 20px;
+	height: 2px;
+	background-color: #fff;
+	position: absolute;
+} 
+
+.prev {
+	left: 10px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.prev::before {
+	left: 8px;
+  transform: rotate(35deg);
+  top: 25px;
+}
+
+.prev::after {
+	transform: rotate(-35deg);
+	left: 8px;
+	top: 14px;
+}
+
+.next {
+	right: 10px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.next::before {
+	right: 8px;
+  transform: rotate(-35deg);
+  top: 25px;
+}
+
+.next::after {
+	transform: rotate(35deg);
+	right: 8px;
+	top: 14px;
+}
+
+
+.none {
+	display: none;
+}
+
+.show {
+	display: block;
+}
